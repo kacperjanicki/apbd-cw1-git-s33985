@@ -15,3 +15,5 @@ static double EuclideanDistance((int, int) a, (int, int) b)
 ((int, int), (int, int)) vectors = generateRandomVectors();
 
 Console.WriteLine(EuclideanDistance(vectors.Item1, vectors.Item2));
+
+Console.WriteLine("Hello world");
