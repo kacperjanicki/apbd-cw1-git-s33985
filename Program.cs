@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿Random rd = new Random();
 
 static double EuclideanDistance((int, int) a, (int, int) b)
 {
@@ -7,7 +7,11 @@ static double EuclideanDistance((int, int) a, (int, int) b)
     return res;
 }
 
-(int,int) vec1= (5,2);
-(int,int) vec2= (1,0);
+((int,int), (int, int)) generateRandomVectors()
+{
+    return ((rd.Next(100), rd.Next(100)), (rd.Next(100), rd.Next(100)));
+}
 
-EuclideanDistance(vec1, vec2);
+((int, int), (int, int)) vectors = generateRandomVectors();
+
+Console.WriteLine(EuclideanDistance(vectors.Item1, vectors.Item2));
