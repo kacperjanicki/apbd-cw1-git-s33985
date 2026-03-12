@@ -17,3 +17,15 @@ static double EuclideanDistance((int, int) a, (int, int) b)
 Console.WriteLine(EuclideanDistance(vectors.Item1, vectors.Item2));
 
 Console.WriteLine("Hello world");
+
+double CalculateAverage(int[] values)
+{
+    double sum = 0;
+    foreach (var val in values)
+    {
+        sum += val;
+    }
+    return sum / values.Length;
+}
+
+Console.WriteLine(CalculateAverage(new []{5,3}));
