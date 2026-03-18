@@ -49,4 +49,9 @@ int CalculateMax(int[] values)
     return max;
 }
 
+int CalculateMin(int[] values)
+{
+    return 0;
+}
+
 Console.WriteLine("something before calculate-min rebase");
