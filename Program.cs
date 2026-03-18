@@ -48,3 +48,5 @@ int CalculateMax(int[] values)
     }
     return max;
 }
+
+Console.WriteLine("something before calculate-min rebase");
