@@ -32,3 +32,19 @@ Console.WriteLine(CalculateAverage(new []{5,3}));
 Console.WriteLine("Drugi commit na feature-average");
 
 Console.WriteLine("Something before merging feature-max");
+
+int CalculateMax(int[] values)
+{
+    if (values == null || values.Length == 0)
+        throw new ArgumentException("Array cannot be empty");
+
+    int max = values[0];
+    foreach (var value in values)
+    {
+        if (value > max)
+        {
+            max = value;
+        }
+    }
+    return max;
+}
