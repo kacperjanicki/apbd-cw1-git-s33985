@@ -51,7 +51,18 @@ int CalculateMax(int[] values)
 
 int CalculateMin(int[] values)
 {
-    return 0;
+    if (values == null || values.Length == 0)
+        throw new ArgumentException("Array cannot be empty");
+
+    int min = values[0];
+    foreach (var value in values)
+    {
+        if (value < min)
+        {
+            min = value;
+        }
+    }
+    return min;
 }
 
 Console.WriteLine("something before calculate-min rebase");
