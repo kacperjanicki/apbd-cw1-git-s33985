@@ -66,3 +66,6 @@ int CalculateMin(int[] values)
 }
 
 Console.WriteLine("something before calculate-min rebase");
+
+
+Console.WriteLine("something on the branch conflict");
