@@ -30,3 +30,5 @@ double CalculateAverage(int[] values)
 
 Console.WriteLine(CalculateAverage(new []{5,3}));
 Console.WriteLine("Drugi commit na feature-average");
+
+Console.WriteLine("Something before merging feature-max");
